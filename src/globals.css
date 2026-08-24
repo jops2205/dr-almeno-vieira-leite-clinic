@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@fontsource-variable/inter";
+
+@theme {
+	--color-primary: #164e63;
+	--font-sans: "Inter Variable", sans-serif;
+}
