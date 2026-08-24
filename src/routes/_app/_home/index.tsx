@@ -1,11 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { FaHeartPulse } from "react-icons/fa6";
 import { Button } from "#/components/button";
-import { agreements } from "#/consts/agreements";
-import { medicalStaff } from "#/consts/medical-staff";
-import { getRandomDoctors } from "#/funcs/get-random-doctors";
-import { AgreementCard } from "./-components/agreement-card";
-import { DoctorCard } from "./-components/doctor-card";
+import { AgreementSection } from "./-components/agreement-section";
+import { ContactSection } from "./-components/contact-section";
+import { MedicalStaffSection } from "./-components/medical-staff-section";
 
 export const Route = createFileRoute("/_app/_home/")({
 	component: Home,
@@ -19,8 +17,6 @@ export const Route = createFileRoute("/_app/_home/")({
 });
 
 function Home() {
-	const randomDoctors = getRandomDoctors(medicalStaff);
-
 	return (
 		<>
 			<section className="flex h-120 flex-col justify-center gap-12 bg-stone-950 px-80 py-24">
@@ -75,79 +71,9 @@ function Home() {
 					</p>
 				</div>
 			</section>
-			<section className="bg-stone-100 px-80 py-24">
-				<div className="flex items-end justify-between">
-					<div className="space-y-3">
-						<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
-							Corpo Clínico
-						</h3>
-						<h2 className="max-w-md font-semibold text-4xl">
-							Conheça a nossa equipa
-						</h2>
-						<p className="max-w-xl text-balance text-stone-500">
-							Profissionais experientes e dedicados, unidos pelo conhecimento,
-							pela excelência e por uma forma próxima e humana de cuidar.
-						</p>
-					</div>
-					<Link to="/medical-staff" className="outline-none">
-						<Button>Ver Corpo Clínico</Button>
-					</Link>
-				</div>
-				<div className="mt-9 grid grid-cols-4 gap-6">
-					{randomDoctors.map(({ name, specialties, src }) => (
-						<DoctorCard
-							key={name}
-							name={name}
-							specialty={specialties[0]}
-							src={src}
-							alt={name}
-						/>
-					))}
-				</div>
-			</section>
-			<section className="px-80 py-24">
-				<div className="flex items-end justify-between">
-					<div className="space-y-3">
-						<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
-							Acesso simplificado
-						</h3>
-						<h2 className="max-w-md font-semibold text-4xl">
-							Acordos e convenções
-						</h2>
-						<p className="max-w-xl text-balance text-stone-500">
-							Dispomos de acordos com várias entidades para tornar o acesso aos
-							cuidados de saúde mais simples e acessível.
-						</p>
-					</div>
-					<Link to="/agreements" className="outline-none">
-						<Button>Conhecer os Acordos</Button>
-					</Link>
-				</div>
-				<div className="mt-9 grid grid-cols-4 gap-6">
-					{agreements.slice(4, 8).map(({ name, src }) => (
-						<AgreementCard key={name} name={name} src={src} />
-					))}
-				</div>
-			</section>
-			<section className="bg-primary px-80 py-24">
-				<div className="flex items-end justify-between">
-					<div className="space-y-3 text-white">
-						<h3 className="font-semibold text-sm uppercase tracking-widest">
-							Estamos aqui para ajudar
-						</h3>
-						<h2 className="max-w-md font-semibold text-4xl">
-							Entre em contacto
-						</h2>
-						<p className="max-w-xl">
-							Estamos disponíveis para esclarecer as suas dúvidas e ajudá-lo a
-							encontrar o cuidado mais adequado às suas necessidades.
-						</p>
-					</div>
-					<Link to="/contacts" className="outline-none">
-						<Button className="bg-white text-primary">Ver Contactos</Button>
-					</Link>
-				</div>
-			</section>
+			<MedicalStaffSection />
+			<AgreementSection />
+			<ContactSection />
 		</>
 	);
 }
