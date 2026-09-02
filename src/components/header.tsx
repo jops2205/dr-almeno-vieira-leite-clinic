@@ -19,10 +19,10 @@ function NavLink({ to, text }: { to: string; text: string }) {
 
 export function Header() {
 	return (
-		<header className="flex justify-between bg-white px-20 py-6">
+		<header className="sticky top-0 z-10 flex flex-wrap items-center justify-between gap-4 border-border border-b bg-white/95 px-4 py-4 backdrop-blur md:px-8 lg:px-12">
 			<Logo />
 			<nav>
-				<ul className="flex h-full items-center gap-12">
+				<ul className="flex flex-wrap items-center justify-end gap-4 text-sm md:gap-6 lg:gap-8">
 					{navigation.slice(0, 1).map(({ to, text }) => (
 						<li key={text}>
 							<NavLink to={to} text={text} />

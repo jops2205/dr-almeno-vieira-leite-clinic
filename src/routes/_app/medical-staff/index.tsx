@@ -46,10 +46,20 @@ function MedicalStaff() {
 
 	return (
 		<>
-			<div className="grid h-80 place-items-center bg-stone-950">
-				<h1 className="font-semibold text-4xl text-white">Corpo Clínico</h1>
+			<div className="page-hero">
+				<div className="page-shell">
+					<p className="mb-3 font-semibold text-primary text-sm uppercase tracking-widest">
+						A nossa equipa
+					</p>
+					<h1 className="max-w-2xl font-semibold text-4xl text-white md:text-5xl">
+						Corpo Clínico
+					</h1>
+					<p className="mt-4 max-w-xl text-white/70">
+						Profissionais dedicados a acompanhar cada etapa do seu cuidado.
+					</p>
+				</div>
 			</div>
-			<div className="space-y-6 px-80 py-24">
+			<div className="page-shell flex flex-col gap-8 py-12 md:py-20">
 				<div className="space-y-3">
 					<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 						A nossa equipa
@@ -67,7 +77,7 @@ function MedicalStaff() {
 					onChange={setSearchValue}
 					placeholder="Pesquisar profissional..."
 				/>
-				<div className="flex gap-6">
+				<div className="flex flex-col gap-8 lg:flex-row">
 					<div className="min-w-80 space-y-3">
 						<div className="flex items-center justify-between">
 							<span className="block font-medium">Filtros</span>

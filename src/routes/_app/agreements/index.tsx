@@ -15,12 +15,20 @@ export const Route = createFileRoute("/_app/agreements/")({
 function Agreements() {
 	return (
 		<>
-			<div className="grid h-80 place-items-center bg-stone-950">
-				<h1 className="font-semibold text-4xl text-white">
-					Acordos e Convenções
-				</h1>
+			<div className="page-hero">
+				<div className="page-shell">
+					<p className="mb-3 font-semibold text-primary text-sm uppercase tracking-widest">
+						Acesso simplificado
+					</p>
+					<h1 className="font-semibold text-4xl text-white md:text-5xl">
+						Acordos e Convenções
+					</h1>
+					<p className="mt-4 max-w-xl text-white/70">
+						Cuidados mais acessíveis, com parceiros de confiança.
+					</p>
+				</div>
 			</div>
-			<div className="space-y-16 px-80 py-24">
+			<div className="page-shell flex flex-col gap-12 py-12 md:py-20">
 				<div className="space-y-3">
 					<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 						Parceiros de saúde
@@ -32,7 +40,7 @@ function Agreements() {
 						médico e o seu plano.
 					</p>
 				</div>
-				<div className="grid grid-cols-4 place-items-center gap-12">
+				<div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 					{agreements.map(({ name, src }) => (
 						<div
 							key={name}

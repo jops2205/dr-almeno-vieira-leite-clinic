@@ -23,7 +23,7 @@ function Home() {
 
 	return (
 		<>
-			<section className="flex h-120 flex-col justify-center gap-12 bg-stone-950 px-80 py-24">
+			<section className="flex min-h-[34rem] flex-col justify-center gap-8 bg-foreground px-4 py-20 md:px-12 lg:px-24">
 				<h1 className="max-w-md text-balance font-semibold text-4xl text-white">
 					Várias especialidades, um só compromisso: a sua saúde
 				</h1>
@@ -31,7 +31,7 @@ function Home() {
 					<Button className="w-fit">Marcar a Sua Consulta</Button>
 				</Link>
 			</section>
-			<section className="flex gap-12 px-80 py-24">
+			<section className="mx-auto flex w-full max-w-7xl gap-12 px-4 py-16 md:px-8 md:py-20">
 				<div className="space-y-6">
 					<div className="space-y-3">
 						<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
@@ -75,7 +75,7 @@ function Home() {
 					</p>
 				</div>
 			</section>
-			<section className="bg-stone-100 px-80 py-24">
+			<section className="mx-auto w-full max-w-7xl bg-stone-100 px-4 py-16 md:px-8 md:py-20">
 				<div className="flex items-end justify-between">
 					<div className="space-y-3">
 						<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
@@ -105,7 +105,7 @@ function Home() {
 					))}
 				</div>
 			</section>
-			<section className="px-80 py-24">
+			<section className="mx-auto w-full max-w-7xl px-4 py-16 md:px-8 md:py-20">
 				<div className="flex items-end justify-between">
 					<div className="space-y-3">
 						<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
@@ -129,7 +129,7 @@ function Home() {
 					))}
 				</div>
 			</section>
-			<section className="bg-primary px-80 py-24">
+			<section className="mx-auto w-full max-w-7xl bg-primary px-4 py-16 md:px-8 md:py-20">
 				<div className="flex items-end justify-between">
 					<div className="space-y-3 text-white">
 						<h3 className="font-semibold text-sm uppercase tracking-widest">

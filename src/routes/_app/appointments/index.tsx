@@ -15,10 +15,20 @@ export const Route = createFileRoute("/_app/appointments/")({
 function Appointments() {
 	return (
 		<div>
-			<div className="grid h-80 place-items-center bg-stone-950">
-				<h1 className="font-semibold text-4xl text-white">Marcar Consulta</h1>
+			<div className="page-hero">
+				<div className="page-shell">
+					<p className="mb-3 font-semibold text-primary text-sm uppercase tracking-widest">
+						Agendamento
+					</p>
+					<h1 className="font-semibold text-4xl text-white md:text-5xl">
+						Marcar Consulta
+					</h1>
+					<p className="mt-4 max-w-xl text-white/70">
+						Dê o primeiro passo para encontrar o cuidado certo para si.
+					</p>
+				</div>
 			</div>
-			<div className="flex items-start justify-center gap-12 px-80 py-24">
+			<div className="page-shell flex flex-col items-start gap-10 py-12 md:py-20 lg:flex-row">
 				<div className="space-y-3">
 					<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 						Agendamento
