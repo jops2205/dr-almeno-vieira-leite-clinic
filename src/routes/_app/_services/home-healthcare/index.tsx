@@ -6,5 +6,5 @@ export const Route = createFileRoute("/_app/_services/home-healthcare/")({
 	head: () => ({ meta: [{ title: "Serviço ao Domicílio" }] }),
 });
 function HomeHealthcare() {
-	return <ServicePage {...serviceContent.home} variant="timeline" />;
+	return <ServicePage {...serviceContent.home} variant="featured" />;
 }

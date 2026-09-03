@@ -6,5 +6,5 @@ export const Route = createFileRoute("/_app/_services/medical-exams/")({
 	head: () => ({ meta: [{ title: "Exames Médicos" }] }),
 });
 function MedicalExams() {
-	return <ServicePage {...serviceContent.exams} variant="split" />;
+	return <ServicePage {...serviceContent.exams} variant="editorial" />;
 }

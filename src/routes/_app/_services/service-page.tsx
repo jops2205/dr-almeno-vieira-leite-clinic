@@ -7,7 +7,7 @@ type ServicePageProps = {
 	description: string;
 	highlights: string[];
 	steps: string[];
-	variant?: "split" | "cards" | "timeline";
+	variant?: "split" | "cards" | "timeline" | "editorial" | "featured";
 };
 
 export function ServicePage({
@@ -21,7 +21,8 @@ export function ServicePage({
 }: ServicePageProps) {
 	return (
 		<main>
-			<section className="bg-foreground px-4 py-20 text-background md:px-12 lg:px-24">
+			<section
+				className={`px-4 py-20 text-background md:px-12 lg:px-24 ${variant === "featured" ? "bg-primary" : variant === "editorial" ? "bg-primary/90" : "bg-foreground"}`}>
 				<div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
 					<div>
 						<p className="mb-4 font-semibold text-primary text-sm uppercase tracking-[0.2em]">
@@ -54,11 +55,15 @@ export function ServicePage({
 						className={
 							variant === "split"
 								? "grid gap-4 sm:grid-cols-2"
-								: "grid gap-4 md:grid-cols-3"
+								: variant === "editorial"
+									? "flex flex-col gap-0 divide-y divide-border border-border border-y"
+									: variant === "featured"
+										? "grid gap-4 sm:grid-cols-3"
+										: "grid gap-4 md:grid-cols-3"
 						}>
 						{highlights.map((item, index) => (
 							<article
-								className="surface flex min-h-32 flex-col justify-between gap-5 p-5"
+								className={`flex min-h-32 flex-col justify-between gap-5 p-5 ${variant === "editorial" ? "bg-transparent" : variant === "featured" ? "surface rounded-2xl shadow-sm" : "surface"}`}
 								key={item}>
 								<span className="font-mono text-primary text-sm">
 									0{index + 1}
@@ -84,7 +89,7 @@ export function ServicePage({
 					</div>
 					<div
 						className={
-							variant === "timeline"
+							variant === "timeline" || variant === "editorial"
 								? "flex flex-col gap-0"
 								: "grid gap-4 sm:grid-cols-3"
 						}>

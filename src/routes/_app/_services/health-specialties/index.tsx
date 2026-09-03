@@ -6,5 +6,5 @@ export const Route = createFileRoute("/_app/_services/health-specialties/")({
 	head: () => ({ meta: [{ title: "Especialidades Não Médicas" }] }),
 });
 function HealthSpecialties() {
-	return <ServicePage {...serviceContent.health} variant="cards" />;
+	return <ServicePage {...serviceContent.health} variant="split" />;
 }
