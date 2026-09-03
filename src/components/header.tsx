@@ -22,7 +22,7 @@ export function Header() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 	return (
-		<header className="sticky top-0 z-10 border-border border-b bg-white/95 px-4 py-4 backdrop-blur md:px-8 lg:px-12">
+		<header className="sticky top-0 z-50 border-border border-b bg-white/95 px-4 py-4 backdrop-blur md:px-8 lg:px-12">
 			<div className="flex items-center justify-between gap-4">
 				<Logo />
 				<button
@@ -39,7 +39,7 @@ export function Header() {
 			</div>
 			<nav
 				id="mobile-navigation"
-				className={`${mobileMenuOpen ? "block" : "hidden"} mt-4 md:mt-0 md:block`}>
+				className={`${mobileMenuOpen ? "block" : "hidden"} relative z-40 mt-4 border-border border-t bg-white pt-4 md:mt-0 md:block md:border-0 md:bg-transparent md:pt-0`}>
 				<ul className="flex flex-col gap-4 border-border border-t pt-4 text-sm md:flex-row md:items-center md:justify-end md:gap-6 md:border-0 md:pt-0 lg:gap-8">
 					{navigation.slice(0, 1).map(({ to, text }) => (
 						<li key={text}>

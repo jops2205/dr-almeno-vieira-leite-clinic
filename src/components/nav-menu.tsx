@@ -32,7 +32,7 @@ export function NavMenu() {
 		<DropdownMenuPrimitive.Root>
 			<DropdownMenuPrimitive.Trigger
 				className={cn(
-					"group cursor-pointer font-medium text-stone-500 outline-none transition-colors hover:text-[#1C1917] data-[state=open]:text-[#1C1917]",
+					"group inline-flex cursor-pointer items-center gap-1 font-medium text-stone-500 outline-none transition-colors hover:text-[#1C1917] data-[state=open]:text-[#1C1917]",
 					isServiceRoute && "active text-[#1C1917]",
 				)}>
 				Serviços
@@ -42,7 +42,7 @@ export function NavMenu() {
 				<DropdownMenuPrimitive.Content
 					align="start"
 					sideOffset={12}
-					className="data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 flex flex-col gap-3 rounded-xs border border-stone-200 bg-white p-6 outline-none data-[state=closed]:animate-out data-[state=open]:animate-in">
+					className="data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 relative z-[60] flex min-w-64 flex-col gap-3 rounded-xl border border-border bg-white p-5 shadow-xl outline-none data-[state=closed]:animate-out data-[state=open]:animate-in">
 					{services.map(({ to, text }) => (
 						<NavItem key={to} to={to} text={text} />
 					))}
