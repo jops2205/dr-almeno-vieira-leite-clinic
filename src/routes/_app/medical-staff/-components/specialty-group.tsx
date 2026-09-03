@@ -15,9 +15,11 @@ export function SpecialtyGroup({
 	onToggleSpecialty,
 }: SpecialtyGroupProps) {
 	return (
-		<div className="space-y-3">
-			<span className="block font-medium">{title}</span>
-			<div className="space-y-1.5">
+		<div className="flex flex-col gap-3">
+			<span className="block font-semibold text-muted-foreground text-xs uppercase tracking-wider">
+				{title}
+			</span>
+			<div className="flex flex-wrap gap-2">
 				{specialties.map((specialty) => (
 					<Checkbox
 						key={specialty}
