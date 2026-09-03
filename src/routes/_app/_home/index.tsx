@@ -31,7 +31,7 @@ function Home() {
 					<Button className="w-fit">Marcar a Sua Consulta</Button>
 				</Link>
 			</section>
-			<section className="mx-auto flex w-full max-w-7xl gap-12 px-4 py-16 md:px-8 md:py-20">
+			<section className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-4 py-16 md:px-8 md:py-20 lg:flex-row">
 				<div className="space-y-6">
 					<div className="space-y-3">
 						<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
@@ -46,7 +46,7 @@ function Home() {
 							com acompanhamento próximo e cuidados pensados para si.
 						</p>
 					</div>
-					<div className="flex gap-6">
+					<div className="flex flex-col gap-6 sm:flex-row">
 						<div className="space-y-0.5">
 							<h4 className="font-medium">Equipa Especializada</h4>
 							<p className="max-w-80 text-sm text-stone-500">
@@ -76,7 +76,7 @@ function Home() {
 				</div>
 			</section>
 			<section className="mx-auto w-full max-w-7xl bg-stone-100 px-4 py-16 md:px-8 md:py-20">
-				<div className="flex items-end justify-between">
+				<div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
 					<div className="space-y-3">
 						<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 							Corpo Clínico
@@ -93,7 +93,7 @@ function Home() {
 						<Button>Ver Corpo Clínico</Button>
 					</Link>
 				</div>
-				<div className="mt-9 grid grid-cols-4 gap-6">
+				<div className="mt-9 grid grid-cols-2 gap-6 md:grid-cols-4">
 					{randomDoctors.map(({ name, specialties, src }) => (
 						<DoctorCard
 							key={name}
@@ -106,7 +106,7 @@ function Home() {
 				</div>
 			</section>
 			<section className="mx-auto w-full max-w-7xl px-4 py-16 md:px-8 md:py-20">
-				<div className="flex items-end justify-between">
+				<div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
 					<div className="space-y-3">
 						<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 							Acesso simplificado
@@ -123,14 +123,14 @@ function Home() {
 						<Button>Conhecer os Acordos</Button>
 					</Link>
 				</div>
-				<div className="mt-9 grid grid-cols-4 gap-6">
+				<div className="mt-9 grid grid-cols-2 gap-6 md:grid-cols-4">
 					{agreements.slice(4, 8).map(({ name, src }) => (
 						<AgreementCard key={name} name={name} src={src} />
 					))}
 				</div>
 			</section>
 			<section className="mx-auto w-full max-w-7xl bg-primary px-4 py-16 md:px-8 md:py-20">
-				<div className="flex items-end justify-between">
+				<div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
 					<div className="space-y-3 text-white">
 						<h3 className="font-semibold text-sm uppercase tracking-widest">
 							Estamos aqui para ajudar

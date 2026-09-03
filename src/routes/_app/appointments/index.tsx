@@ -41,7 +41,7 @@ function Appointments() {
 						pedido não substitui uma confirmação da clínica.
 					</p>
 				</div>
-				<div className="min-w-1/2">
+				<div className="w-full lg:min-w-1/2">
 					<AppointmentForm />
 				</div>
 			</div>
