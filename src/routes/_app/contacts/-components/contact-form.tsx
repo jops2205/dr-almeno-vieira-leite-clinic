@@ -35,7 +35,7 @@ export function ContactForm() {
 
 				form.handleSubmit();
 			}}
-			className="space-y-3">
+			className="surface flex flex-col gap-4 p-6 md:p-8">
 			<form.Field name="name">
 				{(field) => (
 					<Input
@@ -48,7 +48,7 @@ export function ContactForm() {
 					/>
 				)}
 			</form.Field>
-			<div className="flex gap-6">
+			<div className="flex flex-col gap-4 md:flex-row md:gap-6">
 				<form.Field name="email">
 					{(field) => (
 						<Input
