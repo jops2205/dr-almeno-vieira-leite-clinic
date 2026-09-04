@@ -149,7 +149,7 @@ export const serviceContent = {
 	},
 	health: {
 		eyebrow: "Especialidades de saúde",
-		title: "Equilíbrio para viver melhor.",
+		title: "Bem-estar visto por inteiro.",
 		intro:
 			"Serviços complementares que apoiam o seu equilíbrio físico, emocional e funcional em todas as fases da vida.",
 		description:
@@ -165,7 +165,7 @@ export const serviceContent = {
 		eyebrow: "Exames médicos",
 		title: "Respostas para cuidar melhor.",
 		intro:
-			"Tecnologia e acompanhamento para transformar cada exame numa decisão mais tranquila e informada.",
+			"Exames realizados com rigor e orientação, para que os resultados sejam úteis no seu percurso de saúde.",
 		description:
 			"Antes, durante e depois do exame, a nossa equipa explica cada etapa e ajuda a tornar o processo mais simples, seguro e confortável.",
 		highlights: ["Avaliação clínica", "Resultados claros", "Orientação médica"],
@@ -177,7 +177,7 @@ export const serviceContent = {
 	},
 	nursing: {
 		eyebrow: "Enfermagem",
-		title: "Presença e competência quando mais precisa.",
+		title: "Cuidado próximo em cada detalhe.",
 		intro:
 			"Apoio de enfermagem com competência técnica e uma presença humana que faz diferença.",
 		description:
@@ -209,7 +209,7 @@ export const serviceContent = {
 		eyebrow: "Serviço ao domicílio",
 		title: "Cuidado de confiança, onde precisa.",
 		intro:
-			"A equipa vai até si para manter o cuidado próximo, coordenado e adaptado à sua realidade.",
+			"Leve o acompanhamento clínico para casa, com conforto, segurança e a atenção da nossa equipa.",
 		description:
 			"O serviço ao domicílio é indicado para quem precisa de apoio sem deslocação, preservando a qualidade e a continuidade do cuidado.",
 		highlights: ["Mais conforto", "Apoio familiar", "Cuidado personalizado"],
