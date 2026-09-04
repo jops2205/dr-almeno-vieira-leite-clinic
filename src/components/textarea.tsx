@@ -16,7 +16,7 @@ export function Textarea({ label, className, ...props }: TextareaProps) {
 			<textarea
 				id={id}
 				className={cn(
-					"min-h-36 resize-none rounded-xs border border-stone-200 bg-white p-3 text-stone-500 outline-none transition-colors focus-within:border-primary",
+					"min-h-36 resize-none rounded-2xl border border-stone-200 bg-white p-3 text-stone-500 outline-none transition-colors focus-within:border-primary",
 					className,
 				)}
 				{...props}

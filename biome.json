@@ -19,6 +19,9 @@
 				"useSelfClosingElements": "warn",
 				"noUnusedTemplateLiteral": "warn"
 			},
+			"suspicious": {
+				"noArrayIndexKey": "off"
+			},
 			"nursery": {
 				"useSortedClasses": "warn"
 			},

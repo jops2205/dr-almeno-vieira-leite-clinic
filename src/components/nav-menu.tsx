@@ -42,7 +42,7 @@ export function NavMenu() {
 				<DropdownMenuPrimitive.Content
 					align="start"
 					sideOffset={12}
-					className="data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 flex flex-col gap-3 rounded-xs border border-stone-200 bg-white p-6 outline-none data-[state=closed]:animate-out data-[state=open]:animate-in">
+					className="data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 flex flex-col gap-3 rounded-2xl border border-stone-200 bg-white p-6 outline-none data-[state=closed]:animate-out data-[state=open]:animate-in">
 					{services.map(({ to, text }) => (
 						<NavItem key={to} to={to} text={text} />
 					))}

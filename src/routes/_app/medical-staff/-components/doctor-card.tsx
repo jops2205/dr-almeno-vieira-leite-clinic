@@ -10,7 +10,7 @@ type DoctorCardProps = {
 
 export function DoctorCard({ name, specialties, src, alt }: DoctorCardProps) {
 	return (
-		<div className="group flex h-fit overflow-hidden rounded-xs border border-stone-200 bg-white transition-all duration-300 hover:-translate-y-1">
+		<div className="group flex h-fit overflow-hidden rounded-2xl border border-stone-200 bg-white transition-all duration-300 hover:-translate-y-1">
 			{!src && (
 				<div className="grid h-52.5 w-36 place-items-center rounded-xs bg-primary/10 transition-transform duration-500 group-hover:scale-105">
 					<FaUserDoctor className="size-20 text-primary" />

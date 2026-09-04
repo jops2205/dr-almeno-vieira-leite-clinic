@@ -7,7 +7,7 @@ interface MedicalStaffListProps {
 
 export function MedicalStaffList({ staff }: MedicalStaffListProps) {
 	return (
-		<div className="grid h-fit w-full grid-cols-2 gap-6">
+		<div className="grid h-fit w-full grid-cols-3 gap-6">
 			{staff.map(({ name, specialties, src }) => (
 				<DoctorCard
 					key={name}

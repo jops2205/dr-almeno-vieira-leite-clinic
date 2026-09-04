@@ -35,7 +35,7 @@ export function ContactForm() {
 
 				form.handleSubmit();
 			}}
-			className="space-y-3">
+			className="space-y-3 rounded-2xl border border-stone-200 bg-white p-6">
 			<form.Field name="name">
 				{(field) => (
 					<Input

@@ -106,11 +106,11 @@ export function Footer() {
 						<h3 className="mb-1.5 font-medium">Contactos</h3>
 						<div className="mb-1 flex items-center gap-1.5">
 							<FaPhone className="text-primary" />
-							<span className="text-sm text-stone-500">927 500 389</span>
+							<span className="text-sm text-stone-500">+351 927 500 389</span>
 						</div>
 						<div className="mb-1 flex items-center gap-1.5">
 							<FaPhone className="text-primary" />
-							<span className="text-sm text-stone-500">253 648 685</span>
+							<span className="text-sm text-stone-500">+351 253 648 685</span>
 						</div>
 						<div className="flex items-center gap-1.5">
 							<FaEnvelope className="text-primary" />
@@ -154,7 +154,7 @@ export function Footer() {
 					</div>
 				</div>
 			</div>
-			<div className="flex justify-between bg-primary/10 px-20 py-3 text-primary">
+			<div className="flex justify-between bg-primary px-20 py-3 text-white">
 				<p className="flex items-center gap-1">
 					<FaRegCopyright className="size-3" />
 					<span className="text-sm">

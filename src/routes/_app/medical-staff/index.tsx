@@ -1,11 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { Button } from "#/components/button";
 import { medicalStaff } from "#/consts/medical-staff";
-import { type Specialty, specialtyGroups } from "#/consts/specialties";
+import { type Specialty, specialties } from "#/consts/specialties";
 import { filterMedicalStaff } from "#/funcs/filter-medical-staff";
+import { cn } from "#/lib/utils";
 import { MedicalStaffList } from "./-components/medical-staff-list";
 import { SearchInput } from "./-components/search-input";
-import { SpecialtyGroup } from "./-components/specialty-group";
 
 export const Route = createFileRoute("/_app/medical-staff/")({
 	component: MedicalStaff,
@@ -62,36 +63,38 @@ function MedicalStaff() {
 						profissionais que podem acompanhar o seu próximo passo.
 					</p>
 				</div>
-				<SearchInput
-					value={searchValue}
-					onChange={setSearchValue}
-					placeholder="Pesquisar profissional..."
-				/>
-				<div className="flex gap-6">
-					<div className="min-w-80 space-y-3">
-						<div className="flex items-center justify-between">
-							<span className="block font-medium">Filtros</span>
-							<button
-								type="button"
-								onClick={handleClearFilters}
-								className="cursor-pointer text-sm text-stone-500 transition-colors hover:text-primary">
-								Limpar Filtros
-							</button>
-						</div>
-						<div className="space-y-6 rounded-xs border border-stone-200 bg-white p-6">
-							{specialtyGroups.map(({ title, specialties }) => (
-								<SpecialtyGroup
-									key={title}
-									title={title}
-									specialties={specialties}
-									selectedSpecialties={selectedSpecialties}
-									onToggleSpecialty={toggleSpecialty}
-								/>
-							))}
-						</div>
+				<div className="rounded-2xl border border-stone-200 bg-white p-6">
+					<div className="flex items-center justify-between gap-6">
+						<SearchInput
+							value={searchValue}
+							onChange={setSearchValue}
+							placeholder="Pesquisar por nome..."
+						/>
+						<Button onClick={handleClearFilters}>Limpar Filtros</Button>
 					</div>
+					<div className="mt-6 flex flex-wrap items-center gap-3">
+						<span className="font-medium text-sm text-stone-500">
+							Filtrar por especialidade:
+						</span>
+						{specialties.map((specialty) => (
+							<Button
+								key={specialty}
+								type="button"
+								onClick={() => toggleSpecialty(specialty)}
+								className={cn(
+									"px-3 py-1 text-sm",
+									!selectedSpecialties.includes(specialty) &&
+										"bg-primary/10 text-primary/60 hover:bg-primary/60 hover:text-white",
+								)}
+								aria-pressed={selectedSpecialties.includes(specialty)}>
+								{specialty}
+							</Button>
+						))}
+					</div>
+				</div>
+				<div className="flex gap-6">
 					<div className="mt-0.5">
-						<p className="mb-3.5 text-end text-sm text-stone-500">{`${filteredStaff.length} ${filteredStaff.length > 1 ? "resultados" : "resultado"}`}</p>
+						<p className="mb-3.5 font-medium text-sm text-stone-500">{`${filteredStaff.length} ${filteredStaff.length > 1 ? "resultados" : "resultado"}`}</p>
 						<MedicalStaffList staff={filteredStaff} />
 					</div>
 				</div>

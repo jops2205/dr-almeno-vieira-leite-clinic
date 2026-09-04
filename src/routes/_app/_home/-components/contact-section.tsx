@@ -16,7 +16,9 @@ export function ContactSection() {
 					</p>
 				</div>
 				<Link to="/contacts" className="outline-none">
-					<Button className="bg-white text-primary">Ver Contactos</Button>
+					<Button className="border-2 border-white bg-white text-primary hover:border-white hover:bg-primary hover:text-white">
+						Ver Contactos
+					</Button>
 				</Link>
 			</div>
 		</section>

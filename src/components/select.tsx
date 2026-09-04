@@ -37,7 +37,7 @@ export function Select({
 				disabled={disabled}>
 				<SelectPrimitive.Trigger
 					id={id}
-					className="flex items-center justify-between rounded-xs border border-stone-200 bg-white p-3 text-stone-500 outline-none transition-colors focus-within:border-primary">
+					className="flex items-center justify-between rounded-2xl border border-stone-200 bg-white p-3 text-stone-500 outline-none transition-colors focus-within:border-primary">
 					<SelectPrimitive.Value placeholder={placeholder} onBlur={onBlur} />
 					<SelectPrimitive.Icon>
 						<FaChevronDown className="size-3" />
@@ -47,7 +47,7 @@ export function Select({
 					<SelectPrimitive.Content
 						position="popper"
 						sideOffset={6}
-						className="data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 max-h-80 w-(--radix-select-trigger-width) border border-stone-200 bg-white p-6 text-stone-500 data-[state=closed]:animate-out data-[state=open]:animate-in">
+						className="data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 max-h-80 w-(--radix-select-trigger-width) rounded-2xl border border-stone-200 bg-white p-6 text-stone-500 data-[state=closed]:animate-out data-[state=open]:animate-in">
 						<SelectPrimitive.Viewport className="flex flex-col gap-3">
 							{options.map((option) => (
 								<SelectPrimitive.Item

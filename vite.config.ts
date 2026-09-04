@@ -18,6 +18,7 @@ const config = defineConfig({
 	],
 	server: {
 		open: true,
+		port: 3030,
 	},
 });
 

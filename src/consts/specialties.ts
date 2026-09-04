@@ -36,21 +36,6 @@ export const dentistrySpecialties = [
 	"Periodontologia",
 ] as const;
 
-export const specialtyGroups = [
-	{
-		title: "Especialidades Médicas",
-		specialties: medicalSpecialties,
-	},
-	{
-		title: "Especialidades Não Médicas",
-		specialties: healthSpecialties,
-	},
-	{
-		title: "Medicina Dentária",
-		specialties: dentistrySpecialties,
-	},
-] as const;
-
 export const specialties = [
 	...medicalSpecialties,
 	...healthSpecialties,

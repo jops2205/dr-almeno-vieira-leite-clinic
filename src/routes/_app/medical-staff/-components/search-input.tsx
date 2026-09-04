@@ -12,7 +12,7 @@ export function SearchInput({
 	placeholder,
 }: SearchInputProps) {
 	return (
-		<div className="flex w-fit items-center rounded-xs border border-stone-200 bg-white p-2 transition-colors focus-within:border-primary">
+		<div className="flex w-fit items-center rounded-full border border-stone-200 bg-white p-2 transition-colors focus-within:border-primary">
 			<div className="px-2.5 py-1.5">
 				<FaMagnifyingGlass className="text-stone-500" />
 			</div>
