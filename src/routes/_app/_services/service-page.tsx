@@ -8,6 +8,7 @@ type ServicePageProps = {
 	highlights: string[];
 	steps: string[];
 	variant?: "split" | "cards" | "timeline" | "editorial" | "featured";
+	showClinicalStaffLink?: boolean;
 };
 
 export function ServicePage({
@@ -18,6 +19,7 @@ export function ServicePage({
 	highlights,
 	steps,
 	variant = "cards",
+	showClinicalStaffLink = false,
 }: ServicePageProps) {
 	return (
 		<main>
@@ -122,11 +124,20 @@ export function ServicePage({
 						Agende o seu cuidado.
 					</h2>
 				</div>
-				<Link
-					className="rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-					to="/appointments">
-					Marcar consulta
-				</Link>
+				<div className="flex flex-wrap gap-3">
+					{showClinicalStaffLink && (
+						<Link
+							className="rounded-full border border-border px-6 py-3 font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
+							to="/medical-staff">
+							Ver corpo clínico
+						</Link>
+					)}
+					<Link
+						className="rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+						to="/appointments">
+						Marcar consulta
+					</Link>
+				</div>
 			</section>
 		</main>
 	);

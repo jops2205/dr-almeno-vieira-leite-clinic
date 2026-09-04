@@ -6,5 +6,11 @@ export const Route = createFileRoute("/_app/_services/medical-specialties/")({
 	head: () => ({ meta: [{ title: "Especialidades Médicas" }] }),
 });
 function MedicalSpecialties() {
-	return <ServicePage {...serviceContent.medical} variant="cards" />;
+	return (
+		<ServicePage
+			{...serviceContent.medical}
+			showClinicalStaffLink
+			variant="cards"
+		/>
+	);
 }

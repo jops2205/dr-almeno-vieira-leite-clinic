@@ -6,5 +6,11 @@ export const Route = createFileRoute("/_app/_services/dentistry/")({
 	head: () => ({ meta: [{ title: "Medicina Dentária" }] }),
 });
 function Dentistry() {
-	return <ServicePage {...serviceContent.dentistry} variant="featured" />;
+	return (
+		<ServicePage
+			{...serviceContent.dentistry}
+			showClinicalStaffLink
+			variant="featured"
+		/>
+	);
 }
