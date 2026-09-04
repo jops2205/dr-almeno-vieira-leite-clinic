@@ -28,23 +28,31 @@ function Agreements() {
 					</p>
 				</div>
 			</div>
-			<div className="page-shell flex flex-col gap-12 py-12 md:py-20">
-				<div className="space-y-3">
-					<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
-						Parceiros de saúde
-					</h3>
-					<h2 className="font-semibold text-4xl">Convenções disponíveis</h2>
-					<p className="max-w-xl text-stone-500">
-						Consulte as entidades com as quais temos acordo e facilite o acesso
-						aos cuidados de saúde. A cobertura pode variar consoante o ato
-						médico e o seu plano.
-					</p>
+			<div className="page-shell flex flex-col gap-10 py-12 md:py-20">
+				<div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+					<div className="space-y-3">
+						<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
+							Parceiros de saúde
+						</h3>
+						<h2 className="font-semibold text-4xl">Convenções disponíveis</h2>
+						<p className="max-w-xl text-stone-500">
+							Consulte as entidades com as quais temos acordo e facilite o
+							acesso aos cuidados de saúde. A cobertura pode variar consoante o
+							ato médico e o seu plano.
+						</p>
+					</div>
+					<div className="surface max-w-sm p-5">
+						<p className="font-semibold text-sm">Vai utilizar um acordo?</p>
+						<p className="mt-2 text-muted-foreground text-sm">
+							Confirme a cobertura do seu plano antes da consulta.
+						</p>
+					</div>
 				</div>
 				<div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 					{agreements.map(({ name, src }) => (
 						<div
 							key={name}
-							className="grid min-w-52 max-w-52 place-items-center p-4">
+							className="surface flex min-h-32 items-center justify-center p-5 transition-transform hover:-translate-y-1">
 							<img src={src} alt={name} />
 						</div>
 					))}
