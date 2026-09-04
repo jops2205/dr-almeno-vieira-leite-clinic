@@ -78,10 +78,28 @@ export function ServicePage({
 					</div>
 					{showClinicalStaffLink && (
 						<Link
-							className="inline-flex w-fit items-center gap-2 font-semibold text-primary text-sm transition-opacity hover:opacity-70"
+							className="group mt-2 flex max-w-md items-center justify-between gap-5 rounded-2xl border border-primary/20 bg-primary/5 p-4 transition-colors hover:border-primary/40 hover:bg-primary/10"
 							to="/medical-staff">
-							<span>Estas são apenas algumas das nossas áreas</span>
-							<span aria-hidden="true">→</span>
+							<span className="flex items-center gap-3">
+								<span
+									className="flex size-9 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm"
+									aria-hidden="true">
+									+
+								</span>
+								<span className="flex flex-col gap-0.5">
+									<strong className="font-semibold text-foreground text-sm">
+										Há mais especialidades para conhecer
+									</strong>
+									<span className="text-muted-foreground text-xs">
+										Veja todas as áreas e profissionais da clínica
+									</span>
+								</span>
+							</span>
+							<span
+								className="font-semibold text-primary text-xl transition-transform group-hover:translate-x-1"
+								aria-hidden="true">
+								→
+							</span>
 							<span className="sr-only">
 								Ver todas as especialidades no corpo clínico
 							</span>
