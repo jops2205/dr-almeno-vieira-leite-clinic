@@ -76,6 +76,17 @@ export function ServicePage({
 							</article>
 						))}
 					</div>
+					{showClinicalStaffLink && (
+						<Link
+							className="inline-flex w-fit items-center gap-2 font-semibold text-primary text-sm transition-opacity hover:opacity-70"
+							to="/medical-staff">
+							<span>Estas são apenas algumas das nossas áreas</span>
+							<span aria-hidden="true">→</span>
+							<span className="sr-only">
+								Ver todas as especialidades no corpo clínico
+							</span>
+						</Link>
+					)}
 				</div>
 			</section>
 
