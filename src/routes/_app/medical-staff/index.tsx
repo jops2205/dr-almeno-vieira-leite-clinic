@@ -92,11 +92,13 @@ function MedicalStaff() {
 						))}
 					</div>
 				</div>
-				<div className="flex gap-6">
-					<div className="mt-0.5">
-						<p className="mb-3.5 font-medium text-sm text-stone-500">{`${filteredStaff.length} ${filteredStaff.length > 1 ? "resultados" : "resultado"}`}</p>
-						<MedicalStaffList staff={filteredStaff} />
-					</div>
+				<div className="mt-0.5 w-full">
+					<p className="mb-3.5 font-medium text-sm text-stone-500">
+						{`${filteredStaff.length} ${
+							filteredStaff.length > 1 ? "resultados" : "resultado"
+						}`}
+					</p>
+					<MedicalStaffList staff={filteredStaff} />
 				</div>
 			</div>
 		</>

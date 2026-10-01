@@ -10,11 +10,7 @@ type DoctorCardProps = {
 export function DoctorCard({ name, specialty, src, alt }: DoctorCardProps) {
 	return (
 		<div className="space-y-3">
-			<img
-				src={src}
-				alt={alt}
-				className="rounded-2xl object-cover transition-all duration-300 hover:-translate-y-1"
-			/>
+			<img src={src} alt={alt} className="rounded-2xl" />
 			<div>
 				<h3 className="font-medium">{name}</h3>
 				<span className="text-sm text-stone-500">{specialty}</span>

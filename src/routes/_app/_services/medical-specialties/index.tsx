@@ -35,31 +35,19 @@ function MedicalSpecialties() {
 						acompanhar e cuidar da sua saúde em todas as fases da vida.
 					</p>
 				</div>
-				<div className="flex-1 space-y-6">
-					<div className="space-y-6 rounded-2xl bg-primary/10 p-6 text-primary">
-						<p className="font-medium">
-							Na Clínica Dr. Almeno Vieira Leite, reunimos diferentes
-							especialidades médicas para lhe proporcionar um acompanhamento
-							completo, próximo e devidamente coordenado.
-						</p>
-						<Link to="/appointments">
-							<Button className="py-1.5">Marcar Consulta</Button>
-						</Link>
-					</div>
-					<div className="space-y-3 rounded-2xl border border-stone-200 bg-white p-6">
-						<h3 className="font-medium text-lg">
-							As nossas especialidades médicas
-						</h3>
-						<div className="grid grid-cols-2 gap-1.5">
-							{medicalSpecialties.map((specialty) => (
-								<div key={specialty} className="flex items-center gap-2">
-									<div className="w-fit rounded-full bg-primary p-1 text-white">
-										<FaCheck className="size-2.5" />
-									</div>
-									<span className="text-stone-500">{specialty}</span>
+				<div className="h-fit flex-1 space-y-3 rounded-2xl border border-stone-200 bg-white p-6">
+					<h3 className="font-medium text-lg">
+						As nossas especialidades médicas
+					</h3>
+					<div className="grid grid-cols-2 gap-1.5">
+						{medicalSpecialties.map((specialty) => (
+							<div key={specialty} className="flex items-center gap-2">
+								<div className="w-fit rounded-full bg-primary p-1 text-white">
+									<FaCheck className="size-2.5" />
 								</div>
-							))}
-						</div>
+								<span className="text-stone-500">{specialty}</span>
+							</div>
+						))}
 					</div>
 				</div>
 			</section>
