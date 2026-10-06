@@ -20,7 +20,7 @@ function Agreements() {
 					Acordos e Convenções
 				</h1>
 			</div>
-			<div className="space-y-16 px-80 py-24">
+			<div className="space-y-16 px-4 sm:px-8 lg:px-20 2xl:px-80 py-24">
 				<div className="space-y-3">
 					<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 						Parceiros de saúde
@@ -32,7 +32,7 @@ function Agreements() {
 						médico e o seu plano.
 					</p>
 				</div>
-				<div className="grid grid-cols-4 place-items-center gap-12">
+				<div className="grid grid-cols-2 place-items-center gap-8 sm:grid-cols-4 sm:gap-12">
 					{agreements.map(({ name, src }) => (
 						<div
 							key={name}

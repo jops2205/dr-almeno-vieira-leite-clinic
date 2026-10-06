@@ -48,7 +48,7 @@ export function ContactForm() {
 					/>
 				)}
 			</form.Field>
-			<div className="flex gap-6">
+			<div className="grid gap-3 sm:grid-cols-2 sm:gap-6">
 				<form.Field name="email">
 					{(field) => (
 						<Input

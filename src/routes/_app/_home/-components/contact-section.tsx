@@ -3,7 +3,7 @@ import { Button } from "#/components/button";
 
 export function ContactSection() {
 	return (
-		<section className="bg-primary px-80 py-24">
+		<section className="bg-primary px-4 sm:px-8 lg:px-20 2xl:px-80 py-24">
 			<div className="flex items-end justify-between">
 				<div className="space-y-3">
 					<h3 className="font-semibold text-sm text-white/75 uppercase tracking-widest">

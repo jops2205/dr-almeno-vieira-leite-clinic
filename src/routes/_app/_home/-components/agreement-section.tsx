@@ -5,7 +5,7 @@ import { AgreementCard } from "./agreement-card";
 
 export function AgreementSection() {
 	return (
-		<section className="px-80 py-24">
+		<section className="px-4 sm:px-8 lg:px-20 2xl:px-80 py-24">
 			<div className="flex items-end justify-between">
 				<div className="space-y-3">
 					<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
@@ -23,7 +23,7 @@ export function AgreementSection() {
 					<Button>Conhecer os Acordos</Button>
 				</Link>
 			</div>
-			<div className="mt-9 grid grid-cols-4 gap-6">
+			<div className="mt-9 grid grid-cols-2 gap-6 sm:grid-cols-4">
 				{agreements.slice(4, 8).map(({ name, src }) => (
 					<AgreementCard key={name} name={name} src={src} />
 				))}

@@ -20,7 +20,7 @@ export const Route = createFileRoute("/_app/_home/")({
 function Home() {
 	return (
 		<>
-			<section className="flex h-120 flex-col justify-center gap-12 bg-stone-950 px-80 py-24">
+			<section className="flex h-120 flex-col justify-center gap-12 bg-stone-950 px-4 sm:px-8 lg:px-20 2xl:px-80 py-24">
 				<h1 className="max-w-md text-balance font-semibold text-4xl text-white">
 					Várias especialidades, um só compromisso: a sua saúde
 				</h1>
@@ -28,7 +28,7 @@ function Home() {
 					<Button className="w-fit">Marcar a Sua Consulta</Button>
 				</Link>
 			</section>
-			<section className="flex gap-12 px-80 py-24">
+			<section className="flex gap-12 px-4 sm:px-8 lg:px-20 2xl:px-80 py-24">
 				<div className="space-y-6">
 					<div className="space-y-3">
 						<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">

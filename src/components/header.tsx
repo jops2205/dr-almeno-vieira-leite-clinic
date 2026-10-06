@@ -19,7 +19,7 @@ function NavLink({ to, text }: { to: string; text: string }) {
 
 export function Header() {
 	return (
-		<header className="flex justify-between bg-white px-20 py-6">
+		<header className="flex flex-col gap-6 bg-white px-4 py-6 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-20">
 			<Logo />
 			<nav>
 				<ul className="flex h-full items-center gap-12">

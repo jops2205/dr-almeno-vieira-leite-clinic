@@ -50,7 +50,7 @@ function MedicalStaff() {
 			<div className="grid h-80 place-items-center bg-stone-950">
 				<h1 className="font-semibold text-4xl text-white">Corpo Clínico</h1>
 			</div>
-			<div className="space-y-6 px-80 py-24">
+			<div className="space-y-6 px-4 sm:px-8 lg:px-20 2xl:px-80 py-24">
 				<div className="space-y-3">
 					<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 						A nossa equipa

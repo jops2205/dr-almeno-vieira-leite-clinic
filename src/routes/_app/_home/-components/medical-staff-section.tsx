@@ -8,7 +8,7 @@ export function MedicalStaffSection() {
 	const randomDoctors = getRandomDoctors(medicalStaff);
 
 	return (
-		<section className="bg-stone-100 px-80 py-24">
+		<section className="bg-stone-100 px-4 sm:px-8 lg:px-20 2xl:px-80 py-24">
 			<div className="flex items-end justify-between">
 				<div className="space-y-3">
 					<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
@@ -26,7 +26,7 @@ export function MedicalStaffSection() {
 					<Button>Ver Corpo Clínico</Button>
 				</Link>
 			</div>
-			<div className="mt-9 grid grid-cols-4 gap-6">
+			<div className="mt-9 grid grid-cols-2 gap-6 sm:grid-cols-4">
 				{randomDoctors.map(({ name, specialties, src }) => (
 					<DoctorCard
 						key={name}

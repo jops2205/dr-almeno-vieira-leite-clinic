@@ -18,7 +18,7 @@ function Appointments() {
 			<div className="grid h-80 place-items-center bg-stone-950">
 				<h1 className="font-semibold text-4xl text-white">Marcar Consulta</h1>
 			</div>
-			<div className="flex items-start justify-center gap-12 px-80 py-24">
+			<div className="flex flex-col items-stretch justify-center gap-10 px-4 py-16 sm:px-8 lg:flex-row lg:items-start lg:gap-12 lg:px-20 lg:py-24 2xl:px-80">
 				<div className="space-y-3">
 					<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 						Agendamento
@@ -31,7 +31,7 @@ function Appointments() {
 						pedido não substitui uma confirmação da clínica.
 					</p>
 				</div>
-				<div className="min-w-1/2">
+				<div className="w-full lg:min-w-1/2">
 					<AppointmentForm />
 				</div>
 			</div>

@@ -15,7 +15,7 @@ import { Logo } from "./logo";
 export function Footer() {
 	return (
 		<footer>
-			<div className="flex justify-between bg-white px-20 py-12">
+			<div className="grid gap-10 bg-white px-4 py-12 sm:grid-cols-2 sm:px-8 lg:grid-cols-4 lg:gap-8 lg:px-20">
 				<Logo className="h-fit w-48" />
 				<div className="space-y-6">
 					<div>
@@ -154,7 +154,7 @@ export function Footer() {
 					</div>
 				</div>
 			</div>
-			<div className="flex justify-between bg-primary px-20 py-3 text-white">
+			<div className="flex flex-col gap-2 bg-primary px-4 py-3 text-white sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-20">
 				<p className="flex items-center gap-1">
 					<FaRegCopyright className="size-3" />
 					<span className="text-sm">

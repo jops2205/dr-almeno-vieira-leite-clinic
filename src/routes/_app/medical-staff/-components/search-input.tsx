@@ -12,7 +12,7 @@ export function SearchInput({
 	placeholder,
 }: SearchInputProps) {
 	return (
-		<div className="flex w-fit items-center rounded-full border border-stone-200 bg-white p-2 transition-colors focus-within:border-primary">
+		<div className="flex w-full items-center rounded-full border border-stone-200 bg-white p-2 transition-colors focus-within:border-primary sm:w-fit">
 			<div className="px-2.5 py-1.5">
 				<FaMagnifyingGlass className="text-stone-500" />
 			</div>
@@ -20,7 +20,7 @@ export function SearchInput({
 				type="text"
 				value={value}
 				onChange={(e) => onChange(e.target.value)}
-				className="min-w-80 pr-2.5 text-stone-500 outline-none"
+				className="min-w-0 flex-1 pr-2.5 text-stone-500 outline-none sm:min-w-80 sm:flex-none"
 				placeholder={placeholder}
 			/>
 		</div>

@@ -22,7 +22,7 @@ function HealthSpecialties() {
 					Especialidades Não Médicas
 				</h1>
 			</div>
-			<section className="flex justify-between px-80 py-24">
+			<section className="flex flex-col gap-10 px-4 py-16 sm:px-8 lg:flex-row lg:items-start lg:justify-between lg:gap-12 lg:px-20 lg:py-24 2xl:px-80">
 				<div className="space-y-3">
 					<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 						Cuidados Especializados
@@ -38,7 +38,7 @@ function HealthSpecialties() {
 				</div>
 				<div className="h-fit flex-1 space-y-3 rounded-2xl border border-stone-200 bg-white p-6">
 					<h3 className="font-medium text-lg"> As nossas especialidades </h3>
-					<div className="grid grid-cols-2 gap-1.5">
+					<div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2">
 						{healthSpecialties.map((specialty) => (
 							<div key={specialty} className="flex items-center gap-2">
 								<div className="w-fit rounded-full bg-primary p-1 text-white">
@@ -50,7 +50,7 @@ function HealthSpecialties() {
 					</div>
 				</div>
 			</section>
-			<section className="bg-primary px-80 py-24">
+			<section className="bg-primary px-4 sm:px-8 lg:px-20 2xl:px-80 py-24">
 				<div className="flex items-end justify-between">
 					<div className="space-y-3 text-white">
 						<h3 className="font-semibold text-sm uppercase tracking-widest">

@@ -20,7 +20,7 @@ function Dentistry() {
 			<div className="grid h-80 place-items-center bg-stone-950">
 				<h1 className="font-semibold text-4xl text-white">Medicina Dentária</h1>
 			</div>
-			<section className="flex justify-between px-80 py-24">
+			<section className="flex flex-col gap-10 px-4 py-16 sm:px-8 lg:flex-row lg:items-start lg:justify-between lg:gap-12 lg:px-20 lg:py-24 2xl:px-80">
 				<div className="space-y-3">
 					<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 						Cuidados Dentários
@@ -38,7 +38,7 @@ function Dentistry() {
 					<h3 className="font-medium text-lg">
 						Os nossos cuidados de medicina dentária
 					</h3>
-					<div className="grid grid-cols-2 gap-1.5">
+					<div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2">
 						{dentistrySpecialties.map((specialty) => (
 							<div key={specialty} className="flex items-center gap-2">
 								<div className="w-fit rounded-full bg-primary p-1 text-white">
@@ -50,7 +50,7 @@ function Dentistry() {
 					</div>
 				</div>
 			</section>
-			<section className="bg-primary px-80 py-24">
+			<section className="bg-primary px-4 sm:px-8 lg:px-20 2xl:px-80 py-24">
 				<div className="flex items-end justify-between">
 					<div className="space-y-3 text-white">
 						<h3 className="font-semibold text-sm uppercase tracking-widest">

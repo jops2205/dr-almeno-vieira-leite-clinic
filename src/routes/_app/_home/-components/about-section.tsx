@@ -1,6 +1,6 @@
 export function AboutSection() {
 	return (
-		<section className="flex gap-12 bg-primary/10 px-80 py-24">
+		<section className="flex gap-12 bg-primary/10 px-4 sm:px-8 lg:px-20 2xl:px-80 py-24">
 			<div className="space-y-3">
 				<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 					Ao seu lado desde 1994
