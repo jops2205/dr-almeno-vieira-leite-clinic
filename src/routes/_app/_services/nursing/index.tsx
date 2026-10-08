@@ -56,7 +56,7 @@ function Nursing() {
 						</h3>
 						<h2 className="max-w-md font-semibold text-4xl">
 							Cuide da sua saúde com o acompanhamento de profissionais de
-							enfermagem.
+							enfermagem
 						</h2>
 					</div>
 					<Link to="/contacts" className="outline-none">

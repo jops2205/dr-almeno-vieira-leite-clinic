@@ -35,7 +35,7 @@ function Home() {
 							A Clínica
 						</h3>
 						<h2 className="max-w-md font-semibold text-4xl">
-							Um cuidado próximo, pensado para si.
+							Um cuidado próximo, pensado para si
 						</h2>
 						<p className="max-w-xl text-balance text-stone-500">
 							Na Clínica Dr. Almeno Vieira Leite, colocamos cada pessoa no

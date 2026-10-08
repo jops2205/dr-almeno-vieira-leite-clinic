@@ -56,7 +56,7 @@ function MedicalExams() {
 							Estamos aqui para si
 						</h3>
 						<h2 className="max-w-md font-semibold text-4xl">
-							Cuide da sua saúde com exames realizados com rigor e confiança.
+							Cuide da sua saúde com exames realizados com rigor e confiança
 						</h2>
 					</div>
 					<Link to="/contacts" className="outline-none">

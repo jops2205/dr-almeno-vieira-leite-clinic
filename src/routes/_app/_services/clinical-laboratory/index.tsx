@@ -49,17 +49,17 @@ function ClinicalLaboratory() {
 			<div className="grid h-80 place-items-center bg-stone-950">
 				<h1 className="font-semibold text-4xl text-white">Análises Clínicas</h1>
 			</div>
-			<section className="flex gap-12 px-80 pt-24 pb-12">
+			<section className="flex justify-between gap-12 px-80 pt-24 pb-12">
 				<div className="space-y-6">
 					<div className="space-y-3">
 						<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 							O serviço
 						</h3>
 						<h2 className="max-w-md font-semibold text-4xl">
-							Tudo o que precisa, mais perto de si.
+							Tudo o que precisa, mais perto de si
 						</h2>
 					</div>
-					<div className="space-y-1.5 text-sm">
+					<div className="space-y-1.5">
 						<p className="max-w-xl text-stone-500">
 							A nossa equipa assegura um serviço de análises clínicas simples,
 							cuidado e acessível, em parceria com o Grupo UNILABS.
@@ -75,7 +75,7 @@ function ClinicalLaboratory() {
 						Acordos e convenções
 					</h3>
 					<h2 className="mt-3 font-semibold text-3xl tracking-tight">
-						Cuidados acessíveis.
+						Cuidados acessíveis
 					</h2>
 					<div className="mt-6 flex flex-col gap-4">
 						{agreements.map((agreement) => (
@@ -115,7 +115,7 @@ function ClinicalLaboratory() {
 							Resultados
 						</h3>
 						<h2 className="mt-3 font-semibold text-3xl">
-							Escolha como os quer receber.
+							Escolha como os quer receber
 						</h2>
 						<div className="mt-8 grid grid-cols-3 gap-4">
 							{results.map(({ icon: Icon, title, text }) => (

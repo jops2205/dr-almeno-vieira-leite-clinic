@@ -57,7 +57,7 @@ function HomeHealthcare() {
 							Estamos aqui para si
 						</h3>
 						<h2 className="max-w-md font-semibold text-4xl">
-							Cuide da sua saúde com cuidados personalizados, sem sair de casa.
+							Cuide da sua saúde com cuidados personalizados, sem sair de casa
 						</h2>
 					</div>
 					<Link to="/contacts" className="outline-none">

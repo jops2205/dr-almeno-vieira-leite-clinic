@@ -57,7 +57,7 @@ function HealthSpecialties() {
 							ESTAMOS AQUI PARA SI
 						</h3>
 						<h2 className="max-w-md font-semibold text-4xl">
-							Cuide do seu bem-estar com a confiança de estar em boas mãos.
+							Cuide do seu bem-estar com a confiança de estar em boas mãos
 						</h2>
 					</div>
 					<Link to="/contacts" className="outline-none">

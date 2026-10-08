@@ -57,7 +57,7 @@ function Dentistry() {
 							Estamos aqui para si
 						</h3>
 						<h2 className="max-w-md font-semibold text-4xl">
-							Cuide da sua saúde oral com a confiança de estar em boas mãos.
+							Cuide da sua saúde oral com a confiança de estar em boas mãos
 						</h2>
 					</div>
 					<Link to="/contacts" className="outline-none">
