@@ -21,7 +21,7 @@ function Contacts() {
 			<div className="grid h-80 place-items-center bg-stone-950">
 				<h1 className="font-semibold text-4xl text-white">Contactos</h1>
 			</div>
-			<div className="grid grid-cols-3 gap-6 px-80 pt-24">
+			<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 px-4 sm:px-6 lg:px-20 xl:px-80 pt-24">
 				<ContactDetailCard
 					name="Telefone"
 					icon={<FaPhone />}
@@ -41,8 +41,8 @@ function Contacts() {
 					]}
 				/>
 			</div>
-			<div className="flex gap-12 px-80 pt-12 pb-24">
-				<div className="w-1/2 space-y-6">
+			<div className="flex flex-col gap-10 px-4 pt-12 pb-16 sm:px-6 md:gap-12 lg:flex-row lg:px-20 lg:pb-24 xl:px-80">
+				<div className="w-full space-y-6 lg:w-1/2">
 					<div className="space-y-3">
 						<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 							Mensagem Direta
@@ -55,7 +55,7 @@ function Contacts() {
 					</div>
 					<ContactForm />
 				</div>
-				<div className="w-1/2">
+				<div className="w-full lg:w-1/2">
 					<ClinicMap />
 				</div>
 			</div>

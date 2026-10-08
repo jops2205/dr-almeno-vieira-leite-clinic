@@ -49,7 +49,7 @@ function ClinicalLaboratory() {
 			<div className="grid h-80 place-items-center bg-stone-950">
 				<h1 className="font-semibold text-4xl text-white">Análises Clínicas</h1>
 			</div>
-			<section className="flex justify-between gap-12 px-80 pt-24 pb-12">
+			<section className="flex justify-between gap-12 px-4 sm:px-6 lg:px-20 xl:px-80 pt-24 pb-12">
 				<div className="space-y-6">
 					<div className="space-y-3">
 						<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
@@ -93,7 +93,7 @@ function ClinicalLaboratory() {
 				</div>
 			</section>
 			<section>
-				<div className="flex gap-12 px-80 pb-24">
+				<div className="flex gap-12 px-4 sm:px-6 lg:px-20 xl:px-80 pb-24">
 					<div className="rounded-2xl bg-primary p-6 text-white">
 						<FaClock className="size-8" />
 						<p className="mt-10 text-sm text-white/75 uppercase tracking-widest">
@@ -117,7 +117,7 @@ function ClinicalLaboratory() {
 						<h2 className="mt-3 font-semibold text-3xl">
 							Escolha como os quer receber
 						</h2>
-						<div className="mt-8 grid grid-cols-3 gap-4">
+						<div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
 							{results.map(({ icon: Icon, title, text }) => (
 								<div key={title} className="rounded-2xl bg-[#f1f7f5] p-5">
 									<Icon className="size-6 text-primary" />

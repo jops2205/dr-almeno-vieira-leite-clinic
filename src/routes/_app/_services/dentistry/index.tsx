@@ -20,7 +20,7 @@ function Dentistry() {
 			<div className="grid h-80 place-items-center bg-stone-950">
 				<h1 className="font-semibold text-4xl text-white">Medicina Dentária</h1>
 			</div>
-			<section className="flex justify-between px-80 py-24">
+			<section className="flex flex-col gap-10 px-4 py-16 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-20 lg:py-24 xl:px-80">
 				<div className="space-y-3">
 					<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 						Cuidados Dentários
@@ -50,8 +50,8 @@ function Dentistry() {
 					</div>
 				</div>
 			</section>
-			<section className="bg-primary px-80 py-24">
-				<div className="flex items-end justify-between">
+			<section className="bg-primary px-4 sm:px-6 lg:px-20 xl:px-80 py-24">
+				<div className="flex flex-col items-start gap-6 sm:flex-row sm:items-end sm:justify-between">
 					<div className="space-y-3 text-white">
 						<h3 className="font-semibold text-sm uppercase tracking-widest">
 							Estamos aqui para si

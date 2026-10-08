@@ -20,7 +20,7 @@ function Agreements() {
 					Acordos e Convenções
 				</h1>
 			</div>
-			<div className="space-y-16 px-80 py-24">
+			<div className="space-y-16 px-4 sm:px-6 lg:px-20 xl:px-80 py-24">
 				<div className="space-y-3">
 					<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
 						Parceiros de saúde

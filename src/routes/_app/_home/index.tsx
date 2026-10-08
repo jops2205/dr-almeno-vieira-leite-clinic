@@ -20,7 +20,7 @@ export const Route = createFileRoute("/_app/_home/")({
 function Home() {
 	return (
 		<>
-			<section className="flex h-120 flex-col justify-center gap-12 bg-stone-950 px-80 py-24">
+			<section className="flex min-h-96 flex-col justify-center gap-8 bg-stone-950 px-4 py-16 sm:px-6 md:gap-12 lg:h-120 lg:px-20 lg:py-24 xl:px-80">
 				<h1 className="max-w-md text-balance font-semibold text-4xl text-white">
 					Várias especialidades, um só compromisso: a sua saúde
 				</h1>
@@ -28,7 +28,7 @@ function Home() {
 					<Button className="w-fit">Marcar a Sua Consulta</Button>
 				</Link>
 			</section>
-			<section className="flex gap-12 px-80 py-24">
+			<section className="flex flex-col gap-10 px-4 py-16 sm:px-6 md:gap-12 lg:flex-row lg:px-20 lg:py-24 xl:px-80">
 				<div className="space-y-6">
 					<div className="space-y-3">
 						<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
@@ -43,7 +43,7 @@ function Home() {
 							com acompanhamento próximo e cuidados pensados para si.
 						</p>
 					</div>
-					<div className="flex gap-6">
+					<div className="flex flex-col gap-6 sm:flex-row">
 						<div className="space-y-0.5">
 							<h4 className="font-medium">Equipa Especializada</h4>
 							<p className="max-w-80 text-sm text-stone-500">
