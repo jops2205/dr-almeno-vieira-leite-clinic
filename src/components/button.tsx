@@ -9,7 +9,7 @@ export function Button({
 		<button
 			type={type}
 			className={cn(
-				"cursor-pointer rounded-full bg-primary px-4 py-2 font-medium text-white outline-none transition-colors hover:bg-primary/90 active:not-aria-[haspopup]:translate-y-px",
+				"cursor-pointer text-nowrap rounded-full bg-primary px-4 py-1.5 font-medium text-sm text-white outline-none transition-colors hover:bg-primary/90 active:not-aria-[haspopup]:translate-y-px sm:py-2 sm:text-base",
 				className,
 			)}
 			{...props}

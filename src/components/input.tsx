@@ -22,7 +22,7 @@ export function Input({
 				id={id}
 				type={type}
 				className={cn(
-					"rounded-2xl border border-stone-200 bg-white p-3 text-stone-500 outline-none transition-colors focus-within:border-primary",
+					"rounded-2xl border border-stone-200 bg-white p-3 text-stone-500 outline-none transition-colors placeholder:text-sm focus-within:border-primary sm:placeholder:text-base",
 					className,
 				)}
 				{...props}

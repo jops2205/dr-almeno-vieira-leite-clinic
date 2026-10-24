@@ -2,7 +2,8 @@ import { Link } from "@tanstack/react-router";
 import { navigation } from "../consts/navigation";
 import { Button } from "./button";
 import { Logo } from "./logo";
-import { NavMenu } from "./nav-menu";
+import { MobileMenu } from "./mobile-menu";
+import { ServiceMenu } from "./service-menu";
 
 function NavLink({ to, text }: { to: string; text: string }) {
 	return (
@@ -10,7 +11,7 @@ function NavLink({ to, text }: { to: string; text: string }) {
 			to={to}
 			activeProps={{ className: "active text-[#1C1917]" }}
 			inactiveProps={{ className: "text-stone-500" }}
-			className="group font-medium outline-none transition-colors hover:text-[#1C1917]">
+			className="group font-medium text-sm uppercase outline-none transition-colors hover:text-[#1C1917] 2xl:text-base">
 			{text}
 			<div className="h-0.5 w-0 bg-primary transition-all duration-300 group-hover:w-full group-[.active]:w-full" />
 		</Link>
@@ -19,17 +20,17 @@ function NavLink({ to, text }: { to: string; text: string }) {
 
 export function Header() {
 	return (
-		<header className="flex justify-between bg-white px-20 py-6">
+		<header className="flex items-center justify-between bg-white px-6 py-6 sm:px-12 lg:px-24">
 			<Logo />
-			<nav>
-				<ul className="flex h-full items-center gap-12">
+			<nav className="hidden xl:block">
+				<ul className="flex h-full items-center gap-12 2xl:gap-16">
 					{navigation.slice(0, 1).map(({ to, text }) => (
 						<li key={text}>
 							<NavLink to={to} text={text} />
 						</li>
 					))}
-					<li>
-						<NavMenu />
+					<li className="flex items-center">
+						<ServiceMenu />
 					</li>
 					{navigation.slice(1, 4).map(({ to, text }) => (
 						<li key={text}>
@@ -43,6 +44,7 @@ export function Header() {
 					</li>
 				</ul>
 			</nav>
+			<MobileMenu />
 		</header>
 	);
 }

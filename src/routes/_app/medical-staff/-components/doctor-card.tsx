@@ -20,12 +20,11 @@ export function DoctorCard({ name, specialties, src, alt }: DoctorCardProps) {
 					</div>
 				)}
 			</div>
-			<div className="flex flex-col gap-1">
-				<span className="font-medium text-xl">{name}</span>
-				<div className="flex items-center gap-1.5 text-sm text-stone-500">
-					{specialties.map((specialty, index) => (
-						<span key={specialty}>
-							{index > 0 && " | "}
+			<div className="flex flex-col gap-0.5 text-balance">
+				<span className="font-medium text-sm sm:text-base">{name}</span>
+				<div className="flex flex-col text-stone-500 text-xs sm:text-sm">
+					{specialties.map((specialty) => (
+						<span key={specialty} className="uppercase">
 							{specialty}
 						</span>
 					))}

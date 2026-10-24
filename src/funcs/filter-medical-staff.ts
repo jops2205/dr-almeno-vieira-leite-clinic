@@ -1,5 +1,5 @@
 import type { Doctor } from "#/consts/medical-staff";
-import type { Specialty } from "#/consts/specialties";
+import { dentistrySpecialties, type Specialty } from "#/consts/specialties";
 import { normalizeText } from "#/funcs/normalize-text";
 
 type FilterMedicalStaffParameters = {
@@ -15,17 +15,23 @@ export const filterMedicalStaff = ({
 }: FilterMedicalStaffParameters) => {
 	const normalizedSearchValue = normalizeText(searchValue);
 
+	const selectedSpecialties = specialties.flatMap((specialty) =>
+		specialty === "Medicina Dentária Geral"
+			? [specialty, ...dentistrySpecialties]
+			: [specialty],
+	);
+
 	return staff.filter((doctor) => {
 		const searchMatches = normalizeText(doctor.name).includes(
 			normalizedSearchValue,
 		);
 
-		if (specialties.length === 0) {
+		if (selectedSpecialties.length === 0) {
 			return searchMatches;
 		}
 
 		const specialtyMatches = doctor.specialties.some((specialty) =>
-			specialties.includes(specialty),
+			selectedSpecialties.includes(specialty),
 		);
 
 		return searchMatches && specialtyMatches;

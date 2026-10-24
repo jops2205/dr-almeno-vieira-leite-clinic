@@ -27,10 +27,11 @@ export const healthSpecialties = [
 	"Terapia da Fala",
 ] as const;
 
+export const dentistrySpecialty = ["Medicina Dentária Geral"] as const;
+
 export const dentistrySpecialties = [
 	"Endodontia",
 	"Implantologia",
-	"Medicina Dentária Geral",
 	"Odontopediatria",
 	"Ortodontia",
 	"Periodontologia",
@@ -39,6 +40,7 @@ export const dentistrySpecialties = [
 export const specialties = [
 	...medicalSpecialties,
 	...healthSpecialties,
+	...dentistrySpecialty,
 	...dentistrySpecialties,
 ] as const;
 

@@ -17,47 +17,51 @@ export const Route = createFileRoute("/_app/_services/medical-specialties/")({
 function MedicalSpecialties() {
 	return (
 		<>
-			<div className="grid h-80 place-items-center bg-stone-950">
-				<h1 className="font-semibold text-4xl text-white">
+			<section className="flex h-80 items-center justify-center bg-stone-950 p-6">
+				<h1 className="text-center font-semibold text-3xl text-white sm:text-4xl">
 					Especialidades Médicas
 				</h1>
-			</div>
-			<section className="flex justify-between px-80 py-24">
-				<div className="space-y-3">
-					<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
-						Cuidados Especializados
-					</h3>
-					<h2 className="max-w-md font-semibold text-4xl">
-						Cuidados médicos próximos, personalizados e especializados
-					</h2>
-					<p className="max-w-xl text-balance text-stone-500">
-						Conte com uma equipa clínica experiente, dedicada a avaliar,
-						acompanhar e cuidar da sua saúde em todas as fases da vida.
-					</p>
-				</div>
-				<div className="h-fit flex-1 space-y-3 rounded-2xl border border-stone-200 bg-white p-6">
-					<h3 className="font-medium text-lg">
-						As nossas especialidades médicas
-					</h3>
-					<div className="grid grid-cols-2 gap-1.5">
-						{medicalSpecialties.map((specialty) => (
-							<div key={specialty} className="flex items-center gap-2">
-								<div className="w-fit rounded-full bg-primary p-1 text-white">
-									<FaCheck className="size-2.5" />
+			</section>
+			<section className="flex justify-center px-6 py-12 sm:px-12 lg:py-24">
+				<div className="flex flex-col gap-12 xl:flex-row xl:gap-24">
+					<div className="max-w-xl space-y-3">
+						<h3 className="font-semibold text-primary text-xs uppercase tracking-widest sm:text-sm">
+							Cuidados especializados
+						</h3>
+						<h2 className="text-balance font-semibold text-3xl sm:text-4xl">
+							Cuidados médicos próximos, personalizados e especializados
+						</h2>
+						<p className="text-balance text-sm text-stone-500 sm:text-base">
+							Conte com uma equipa clínica experiente, dedicada a avaliar,
+							acompanhar e cuidar da sua saúde em todas as fases da vida.
+						</p>
+					</div>
+					<div className="h-fit max-w-xl space-y-3 rounded-2xl border border-stone-200 bg-white p-6">
+						<h3 className="text-balance font-medium sm:text-lg">
+							As nossas especialidades médicas
+						</h3>
+						<div className="grid xs:grid-cols-2 gap-x-6 gap-y-2">
+							{medicalSpecialties.map((specialty) => (
+								<div key={specialty} className="flex items-start gap-2">
+									<div className="w-fit rounded-full bg-primary p-1 text-white">
+										<FaCheck className="size-2 sm:size-2.5" />
+									</div>
+									<span className="-mt-0.5 text-balance text-sm text-stone-500 sm:-mt-0.75 sm:text-base">
+										{specialty}
+									</span>
 								</div>
-								<span className="text-stone-500">{specialty}</span>
-							</div>
-						))}
+							))}
+						</div>
 					</div>
 				</div>
 			</section>
-			<section className="bg-primary px-80 py-24">
-				<div className="flex items-end justify-between">
+			<section className="flex justify-center bg-primary px-6 py-12 sm:px-12 lg:py-24">
+				<div className="flex w-full max-w-xl flex-col gap-12 xl:max-w-[1179.16px] xl:flex-row xl:items-end xl:justify-between">
 					<div className="space-y-3 text-white">
-						<h3 className="font-semibold text-sm uppercase tracking-widest">
+						<h3 className="font-semibold text-xs uppercase tracking-widest sm:text-sm">
 							Estamos aqui para si
 						</h3>
-						<h2 className="max-w-md font-semibold text-4xl">
+						<h2 className="text-balance font-semibold text-3xl sm:text-4xl">
 							Cuide da sua saúde com a confiança de estar em boas mãos
 						</h2>
 					</div>

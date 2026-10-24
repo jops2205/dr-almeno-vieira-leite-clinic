@@ -1,25 +1,34 @@
 export function AboutSection() {
 	return (
-		<section className="flex gap-12 bg-primary/10 px-80 py-24">
-			<div className="space-y-3">
-				<h3 className="font-semibold text-primary text-sm uppercase tracking-widest">
-					Ao seu lado desde 1994
-				</h3>
-				<h2 className="min-w-md font-semibold text-4xl">
-					Cuidamos da sua saúde há mais de 30 anos
-				</h2>
+		<section className="flex justify-center bg-primary/10 px-6 py-12 sm:px-12 lg:py-24">
+			<div className="flex max-w-xl flex-col gap-6 xl:w-full xl:max-w-293">
+				<div className="space-y-3">
+					<h3 className="font-semibold text-primary text-xs uppercase tracking-widest sm:text-sm">
+						Ao seu lado desde 1994
+					</h3>
+					<h2 className="text-balance font-semibold text-3xl sm:text-4xl">
+						Cuidamos da sua saúde há mais de 30 anos
+					</h2>
+				</div>
+				<div className="max-w-4xl space-y-3 text-balance text-sm sm:text-base">
+					<p className="text-primary">
+						Fundada em 1994, a Clínica kDr. Almeno Vieira Leite presta cuidados
+						de saúde especializados em regime de ambulatório no concelho de
+						Vieira do Minho, oferecendo um vasto conjunto de serviços, incluindo
+						consultas de especialidade, análises clínicas, exames médicos e
+						cuidados de enfermagem.
+					</p>
+					<p className="text-primary">
+						A Clínica disponibiliza ainda um vasto leque de cuidados
+						domiciliários, todos os dias da semana, proporcionando um maior
+						conforto e bem-estar aos seus utentes e familiares.
+					</p>
+					<p className="text-primary">
+						A experiência desenvolvida no decorrer de mais de 30 anos, permitiu
+						elevar o seu nome como uma referência local no sector da saúde.
+					</p>
+				</div>
 			</div>
-			<p className="text-primary">
-				Fundada em 1994, a Clínica Dr. Almeno Vieira Leite dedica-se à prestação
-				de cuidados de saúde especializados de proximidade, em regime de
-				ambulatório, no concelho de Vieira do Minho. Disponibilizamos um vasto
-				leque de especialidades médicas e não médicas, consultas, serviços e
-				exames, complementados por cuidados de saúde no domicílio, incluindo
-				atendimento médico, enfermagem e realização de exames, com todo o
-				conforto e segurança. Com mais de 30 anos de experiência, somos uma
-				referência local na área da saúde, com uma abordagem assente na
-				proximidade, qualidade e confiança.
-			</p>
 		</section>
 	);
 }

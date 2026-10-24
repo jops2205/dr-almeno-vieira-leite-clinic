@@ -8,13 +8,16 @@ export const getRandomDoctors = (
 		(doctor) => doctor.src && doctor.specialties.length === 1,
 	);
 
-	const shuffled = [...eligibleDoctors];
+	const shuffledDoctors = [...eligibleDoctors];
 
-	for (let i = shuffled.length - 1; i > 0; i--) {
+	for (let i = shuffledDoctors.length - 1; i > 0; i--) {
 		const j = Math.floor(Math.random() * (i + 1));
 
-		[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+		[shuffledDoctors[i], shuffledDoctors[j]] = [
+			shuffledDoctors[j],
+			shuffledDoctors[i],
+		];
 	}
 
-	return shuffled.slice(0, count);
+	return shuffledDoctors.slice(0, count);
 };

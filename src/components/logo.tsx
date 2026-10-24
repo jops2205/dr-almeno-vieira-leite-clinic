@@ -9,7 +9,7 @@ export function Logo({
 		<img
 			src={logo}
 			alt="Clínica Dr. Almeno Vieira Leite"
-			className={cn("w-32 select-none", className)}
+			className={cn("w-24 select-none sm:w-30 2xl:w-32", className)}
 			{...props}
 		/>
 	);

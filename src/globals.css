@@ -5,4 +5,5 @@
 @theme {
 	--color-primary: #0f766e;
 	--font-sans: "Inter Variable", sans-serif;
+	--breakpoint-xs: 32.5rem;
 }
