@@ -131,7 +131,7 @@ function MedicalStaff() {
 			</section>
 			<div className="flex flex-col items-center gap-12 px-6 pt-6 pb-12 sm:px-12 lg:pb-24">
 				{hasFilters ? (
-					<section className="max-w-7xl">
+					<section className="w-full max-w-7xl">
 						<p className="mb-3.5 font-medium text-sm text-stone-500">
 							{`${filteredStaff.length} ${
 								filteredStaff.length > 1 ? "resultados" : "resultado"
